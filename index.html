@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>humilde pedido</title>
+</head>
+<body>
+    <div class="box">
+        <p>Me da um emprego?</p>
+        <div class="button-container">
+            <button>
+                <a href="sim.html">Sim</a>
+            </button><!--button-->
+            <button id="no">Não</button>
+        </div>
+    </div><!--box-->
+</body>
+<script>
+    let button = document.getElementById('no'); 
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+    button.addEventListener('mouseover', function (){
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+</html>
